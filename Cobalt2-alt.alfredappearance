@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#FFC543FF",
+        "font" : "Helvetica",
+        "color" : "#C2C2C2FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFC543FF",
+        "font" : "Helvetica",
+        "color" : "#909090FF"
+      },
+      "backgroundSelected" : "#1A466073",
+      "text" : {
+        "size" : 24,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Operator Mono Light",
+        "color" : "#A6A6A6FF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 8,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 5,
+      "background" : "#1D455F72",
+      "spacing" : 10,
+      "text" : {
+        "size" : 37,
+        "colorSelected" : "#000000FF",
+        "font" : "Operator Mono Light",
+        "color" : "#FFC543FF"
+      },
+      "backgroundSelected" : "#C7D0DAFF"
+    },
+    "window" : {
+      "color" : "#17334675",
+      "paddingHorizontal" : 0,
+      "width" : 680,
+      "borderPadding" : 0,
+      "borderColor" : "#1733469E",
+      "blur" : 40,
+      "roundness" : -64,
+      "paddingVertical" : 0
+    },
+    "credit" : "Json Wharff",
+    "separator" : {
+      "color" : "#163447FF",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#D4D4D4FF",
+      "thickness" : 2
+    },
+    "name" : "Cobalt2-alt"
+  }
+}
