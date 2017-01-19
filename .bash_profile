@@ -5,6 +5,11 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+if [ -f ~/.profile ]; then
+  source ~/.profile
+fi
+
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
