@@ -6,6 +6,14 @@ if [ -f ~/.profile ]; then
   source ~/.profile
 fi
 
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
 if [ -f ~/.gitconfig ]; then
   source ~/.gitconfig
   echo 'sourced ~/.gitconfig'
@@ -15,15 +23,6 @@ if [ -f ~/.git-completion ]; then
   source ~/.git-completion;
   echo 'sourced ~/.git-completion';
 fi
-
-# Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-  [ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
-
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
