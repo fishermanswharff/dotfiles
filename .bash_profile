@@ -1,6 +1,3 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
@@ -9,6 +6,15 @@ if [ -f ~/.profile ]; then
   source ~/.profile
 fi
 
+if [ -f ~/.gitconfig ]; then
+  source ~/.gitconfig
+  echo 'sourced ~/.gitconfig'
+fi
+
+if [ -f ~/.git-completion ]; then
+  source ~/.git-completion;
+  echo 'sourced ~/.git-completion';
+fi
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -18,10 +24,6 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
-if [ -f ~/.git-completion ]; then
-  source ~/.git-completion;
-  echo 'sourced ~/.git-completion';
-fi
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
