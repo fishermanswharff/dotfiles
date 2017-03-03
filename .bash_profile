@@ -48,7 +48,7 @@ elif [ -f /etc/bash_completion ]; then
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
-if [ -f .git-completion ]; then
+if [ -f ~/.git-completion ]; then
   complete -o default -o nospace -F _git g;
 fi;
 
