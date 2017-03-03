@@ -14,10 +14,10 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
-if [ -f ~/.gitconfig ]; then
-  source ~/.gitconfig
-  echo 'sourced ~/.gitconfig'
-fi
+# if [ -f ~/.gitconfig ]; then
+#   source ~/.gitconfig
+#   echo 'sourced ~/.gitconfig'
+# fi
 
 if [ -f ~/.git-completion ]; then
   source ~/.git-completion;

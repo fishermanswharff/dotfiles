@@ -7,5 +7,5 @@ export PATH=/usr/local/mysql/bin:$PATH
 launchctl setenv PATH $PATH
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 export PATH=./bin:/usr/local/bin:$PATH
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+# # Add `~/bin` to the `$PATH`
+# export PATH="$HOME/bin:$PATH";
