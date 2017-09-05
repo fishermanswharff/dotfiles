@@ -1,3 +1,4 @@
+alias python='python3'
 alias rake86db='rake db:drop db:create db:migrate db:seed'
 alias nbin='PATH=$(npm bin):$PATH'
 alias openPorts='lsof -i | grep LISTEN'        # openPorts:    All listening connections
