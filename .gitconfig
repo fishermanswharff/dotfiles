@@ -73,8 +73,8 @@
     fi \
   }; f"
 
-  supdate = 'submodule update --remote --rebase'
-  spush = 'push --recurse-submodules=on-demand'
+  supdate = 'git submodule update --remote --rebase'
+  spush = 'git push --recurse-submodules=on-demand'
   sdiff = '!'"git diff && git submodule foreach 'git diff'"
 
 [apply]
