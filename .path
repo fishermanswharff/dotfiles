@@ -9,3 +9,4 @@ export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 export PATH=./bin:/usr/local/bin:$PATH
 export PATH=/usr/local/bin/python3:/usr/bin/python:/usr/local/bin/python2:$PATH
 export PATH="$HOME/bin:$PATH";
+export PATH="$HOME/.chefdk/gem/ruby/2.5.0/bin:$PATH"
