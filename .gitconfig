@@ -159,7 +159,7 @@
   default = matching
   # Make `git push` push relevant annotated tags when pushing branches out.
   followTags = true
-  recurseSubmodules = on-demand
+  recurseSubmodules = 'on-demand'
 
 [status]
   submodulesummary = 1
