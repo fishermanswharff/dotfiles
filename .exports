@@ -27,4 +27,9 @@ export MANPAGER='less -X';
 # CLI Colors
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# node
 export NODE_PATH=/usr/local/lib/node_modules:${NODE_PATH}
+
+# vault
+export VAULT_ADDR=https://vault.aso.apple.com
