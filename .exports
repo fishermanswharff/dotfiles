@@ -34,6 +34,4 @@ export NODE_PATH=/usr/local/lib/node_modules:${NODE_PATH}
 # vault
 export VAULT_ADDR=https://vault.aso.apple.com
 
-# habitat
-export HAB_BLDR_URL=https://bldr.aso.apple.com
-export HAB_AUTH_TOKEN=_Qk9YLTEKYmxkci0yMDE4MDgwNjE3MDkyMApibGRyLTIwMTgwODA2MTcwOTIwCmtjbjZBMVJlSEd4NWFuWWxGM2xRKzVLY2J2YzduWmFHCjZpckZ5UU9aR1FtQm8rM29iMWsybW4xdGJ5ZXJkZ0dtT3FBTGYzZGJRNkQreExVZw
+export REQUESTS_CA_BUNDLE=/etc/ssl/certs/corp_ca_bundle.pem
