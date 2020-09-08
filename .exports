@@ -34,4 +34,5 @@ export NODE_PATH=/usr/local/lib/node_modules:${NODE_PATH}
 # vault
 export VAULT_ADDR=https://vault.aso.apple.com
 
-export REQUESTS_CA_BUNDLE=/etc/ssl/certs/corp_ca_bundle.pem
+export SSL_CERT_FILE=/etc/ssl/certs/corp_ca_bundle.pem
+export REQUESTS_CA_BUNDLE=$SSL_CERT_FILE

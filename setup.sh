@@ -2,8 +2,18 @@ if [[ -f ~/.zshrc ]]; then
   rm ~/.zshrc
 fi
 
-
 function setup(){
+  rm -rf \
+    ~/.aliases \
+    ~/.curlrc \
+    ~/.rvmrc \
+    ~/.exports \
+    ~/.gitconfig \
+    ~/.git-completion \
+    ~/.gitignore \
+    ~/.path \
+    ~/.zshrc
+
   rsync \
     -avh \
     --no-perms \
@@ -12,14 +22,13 @@ function setup(){
     .rvmrc \
     .exports \
     .gitconfig \
-    .git-completion \
     .gitignore \
     .path \
     .zshrc \
     ~;
-  # source ~/.zshrc
 }
 
+# .git-completion \
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
   setup;
@@ -31,5 +40,3 @@ else
   fi;
 fi;
 unset setup;
-
-# source ~/.zshrc

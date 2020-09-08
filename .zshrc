@@ -1,5 +1,4 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 export VAULT_ADDR=https://vault.aso.apple.com
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jason/.oh-my-zsh"
@@ -120,8 +119,12 @@ if [[ -f ~/.aliases ]]; then
   source ~/.aliases
 fi
 
-if [[ -f ~/..git-completion ]]; then
-  source ~/.git-completion
+# if [[ -f ~/.gitconfig ]]; then
+#   source ~/.gitconfig
+# fi
+
+if [[ -f ~/.path ]]; then
+  source ~/.path
 fi
 
 function virtenv_indicator {
