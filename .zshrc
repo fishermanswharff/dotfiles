@@ -69,11 +69,13 @@ HIST_STAMPS="mm/dd/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  gitfast
   sublime
   virtualenv
   zsh-kubectl-prompt
 )
 
+complete -o default -o nospace -F _git g;
 source $ZSH/oh-my-zsh.sh
 source ~/.rvm/scripts/rvm
 
