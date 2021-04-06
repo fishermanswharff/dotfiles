@@ -75,9 +75,9 @@ plugins=(
   zsh-kubectl-prompt
 )
 
-complete -o default -o nospace -F _git g;
 source $ZSH/oh-my-zsh.sh
 source ~/.rvm/scripts/rvm
+complete -o default -o nospace -F _git g;
 
 # User configuration
 # ---------------------------

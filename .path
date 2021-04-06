@@ -12,7 +12,8 @@ export PATH="$HOME/bin:$PATH";
 export PATH="$HOME/.chefdk/gem/ruby/2.5.0/bin:$PATH"
 # gradle
 if [[ -d /opt/gradle ]]; then
-  export PATH="/opt/gradle/gradle-5.6.4/bin:$PATH"
+  # export PATH="/opt/gradle/gradle-5.6.4/bin:$PATH"
+  export PATH="/opt/gradle/gradle-6.8.2/bin:$PATH"
 fi
 if [[ -d /usr/local/bin/groovy-2.5.13/ ]]; then
   export PATH="/usr/local/bin/groovy-2.5.13/bin:$PATH"
@@ -20,3 +21,4 @@ fi
 if [[ -d /usr/local/bin/git-lfs-darwin-amd64-v2 ]]; then
   export PATH=$PATH:"/usr/local/bin/git-lfs-darwin-amd64-v2"
 fi
+[[ -d /opt/brew/share/zsh/site-functions/ ]] && fpath+=(/opt/brew/share/zsh/site-functions/)
