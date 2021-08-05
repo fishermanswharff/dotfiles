@@ -75,6 +75,8 @@ plugins=(
   zsh-kubectl-prompt
 )
 
+[[ -d /opt/brew/share/zsh/site-functions/ ]] && fpath+=(/opt/brew/share/zsh/site-functions/)
+
 source $ZSH/oh-my-zsh.sh
 source ~/.rvm/scripts/rvm
 complete -o default -o nospace -F _git g;
