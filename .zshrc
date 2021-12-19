@@ -131,6 +131,27 @@ if [[ -f ~/.path ]]; then
   source ~/.path
 fi
 
+sudo launchctl list | grep 'com.apple.metadata.mds.scan' > /dev/null 2>&1
+if [[ $? == 0 ]]; then
+  sudo launchctl unload /System/Library/LaunchDaemons/com.apple.metadata.mds.scan.plist
+fi
+
+sudo launchctl list | grep 'com.apple.metadata.mds.index' > /dev/null 2>&1
+if [[ $? == 0 ]]; then
+  sudo launchctl unload /System/Library/LaunchDaemons/com.apple.metadata.mds.index.plist
+fi
+
+sudo launchctl list | grep 'com.apple.metadata.mds.spindump' > /dev/null 2>&1
+if [[ $? == 0 ]]; then
+  sudo launchctl unload /System/Library/LaunchDaemons/com.apple.metadata.mds.spindump.plist
+fi
+
+sudo launchctl list | grep 'com.apple.metadata.mds' > /dev/null 2>&1
+if [[ $? == 0 ]]; then
+  sudo launchctl unload /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
+fi
+
+
 function virtenv_indicator {
   if [[ -z $VIRTUAL_ENV ]]; then
     psvar[1]=''
@@ -138,6 +159,8 @@ function virtenv_indicator {
     psvar[1]=${VIRTUAL_ENV##*/}
   fi
 }
+
+
 
 add-zsh-hook precmd virtenv_indicator
 
